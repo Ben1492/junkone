@@ -1,8 +1,8 @@
-$files = Get-ChildItem .\FileRename
+$files = Get-ChildItem 'C:\Users\Ben\Documents\PS Scripts\FileRename'
 $files = $files | Sort-Object LastAccessTime
 
 
-for ($i = 1; $i++; $i -lt $files.count) {
-    $fileName = "File" + "$i".txt
-    rename $file[$i] $fileName
+for ($i = 0; $i -lt $files.count; $i++) {
+    $fileName = "C:\Users\Ben\Documents\PS Scripts\FileRename\FinalFile" + ($i+1)+".txt"
+    Rename-Item $files[$i].FullName $fileName
 }
