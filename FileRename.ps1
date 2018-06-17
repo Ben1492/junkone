@@ -10,3 +10,5 @@ for ($i = 0; $i -lt $files.count; $i++) {
 <#this is a block
 of comment code
 just to add some changes to the file#>
+
+#and one more line, just to check the commit again.
